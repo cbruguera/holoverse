@@ -1,0 +1,10 @@
+{
+  "name": "@holoverse/api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "echo \"API stub\"",
+    "build": "echo \"API stub\" && exit 0",
+    "test": "echo \"No tests yet\" && exit 0"
+  }
+}

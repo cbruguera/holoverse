@@ -1,0 +1,10 @@
+{
+  "name": "@holoverse/contracts",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "echo \"Contracts stub — Hardhat not yet configured\" && exit 0",
+    "test": "echo \"No tests yet\" && exit 0",
+    "lint": "eslint ."
+  }
+}

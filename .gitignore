@@ -1,0 +1,32 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+build/
+
+# hardhat
+artifacts/
+cache/
+typechain-types/
+deployments/localhost/
+
+# environment
+.env
+.env.*
+!.env.example
+
+# pnpm
+.pnpm-store/
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# os
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
