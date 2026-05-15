@@ -1,6 +1,6 @@
 # Holoverse — Architecture (components & phasing)
 
-This document describes the system architecture and the major components to implement over the coming months. It aligns with `Holoverse-v0.1.MD` (product) and `Holoverse-TOKENOMICS.md` (economy).
+This document describes the system architecture and the major components to implement over the coming months. It aligns with `Holoverse-MAIN_FEATURES-v0.1.MD` (product) and `Holoverse-TOKENOMICS.md` (economy).
 
 ## Guiding separation
 

@@ -22,7 +22,7 @@ Stand up the monorepo, core smart contracts, minimal indexer, and CI. Deliver a 
 
 - TypeScript config
 - Dependencies: `@openzeppelin/contracts` v5, `hardhat`, `ethers`, `dotenv`
-- Network configs: localhost, Sepolia
+- Network configs: localhost, Arbitrum Sepolia
 - Folder layout: `contracts/`, `test/`, `scripts/`, `deployments/`
 
 ---
@@ -39,8 +39,10 @@ Stand up the monorepo, core smart contracts, minimal indexer, and CI. Deliver a 
 - `mintUniverse()` accepts ENERGY + USDC (requires prior approval from caller):
   - ENERGY: 90% burned via `burn()`, 10% transferred to treasury address
   - USDC: fully transferred to treasury address
+- Mint costs (ENERGY amount + USDC fee) are configurable — set as constructor arguments, updatable by owner
+- Stub `baseURI` in constructor; art pipeline wires real URIs in Phase V
 - Emits `UniverseMinted(tokenId, owner, energyBurned)` event
-- Unit tests: happy path, insufficient balance, treasury split correctness, event emission
+- Unit tests: happy path, insufficient balance, treasury split correctness, cost config, event emission
 
 ---
 
@@ -48,7 +50,8 @@ Stand up the monorepo, core smart contracts, minimal indexer, and CI. Deliver a 
 
 - `scripts/deploy.ts`: deploys `EnergyToken` and `UniverseNFT`, grants `MINTER_ROLE`, writes deployed addresses to `deployments/<network>.json`
 - All config (RPC URL, deployer key, USDC address) driven by env vars — no hardcoded values
-- Mock USDC contract for localhost/testnet
+- Native USDC (`0xaf88d065e77c8cC2239327C5EDb3A432268e5831`) on Arbitrum One mainnet
+- Mock USDC contract (`MockUSDC.sol`) for localhost and Arbitrum Sepolia
 
 ---
 
@@ -65,8 +68,8 @@ Stand up the monorepo, core smart contracts, minimal indexer, and CI. Deliver a 
 
 ## Step 7: Testnet deploy + smoke test
 
-- Deploy to Sepolia
-- Verify contracts on Etherscan
+- Deploy to Arbitrum Sepolia
+- Verify contracts on Arbiscan
 - Manual end-to-end smoke test: approve tokens → call `mintUniverse` → confirm 90/10 split on-chain → confirm indexer picks up events
 
 ---
@@ -76,7 +79,7 @@ Stand up the monorepo, core smart contracts, minimal indexer, and CI. Deliver a 
 | Decision | Recommendation |
 |---|---|
 | Treasury address | Gnosis Safe multisig — establish the pattern on testnet, not just an EOA |
-| USDC address | Well-known on mainnet; deploy a mintable mock for localhost and Sepolia |
+| USDC address | Native USDC on Arbitrum One; `MockUSDC.sol` for localhost and Arbitrum Sepolia |
 | ENERGY token access control | `MINTER_ROLE` held by a deployer EOA in Phase I; transferred to emissions engine in Phase IV |
 
 ---
@@ -88,6 +91,6 @@ Stand up the monorepo, core smart contracts, minimal indexer, and CI. Deliver a 
 - [ ] `pnpm --filter contracts test` passes all contract tests
 - [ ] `pnpm --filter indexer dev` starts without errors against a local Hardhat node
 - [ ] CI passes on a test PR (lint + compile + test)
-- [ ] Sepolia deploy succeeds; contracts visible and verified on Etherscan
+- [ ] Arbitrum Sepolia deploy succeeds; contracts visible and verified on Arbiscan
 - [ ] `mintUniverse` smoke test confirms 90/10 split and indexer event ingestion
 

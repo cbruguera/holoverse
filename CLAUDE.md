@@ -27,6 +27,11 @@ Web3 game where players mint and evolve unique universes as NFTs. Game state is 
 
 - Check if any document needs relevant and meaningful updates after any change. Keep all documents comprehensive yet concise and elegant.
 
+## Git commits
+
+- Do not include `Co-Authored-By` trailers
+- Commit only files relevant to the change — do not bundle unrelated modifications
+
 ## Never do
 
-- Change `docs/Holoverse-MAIN_FEATURES` document (any version), but you can point out any update suggestions if valuable. 
+- Change `docs/Holoverse-MAIN_FEATURES` document (any version), but you can point out any update suggestions if valuable.
