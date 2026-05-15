@@ -30,7 +30,7 @@ Web3 game where players mint and evolve unique universes as NFTs. Game state is 
 ## Git commits
 
 - Do not include `Co-Authored-By` trailers
-- Commit only files relevant to the change — do not bundle unrelated modifications
+- Keep commits small and cohesive — each commit should represent one logical unit of work, not an arbitrary grouping of disparate changes
 
 ## Never do
 
