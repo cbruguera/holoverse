@@ -13,7 +13,7 @@
 	3. Social / Technological
 	4. Transcendent [requires definition]
 
-[idea] Certain acctions in the game also require and burn ENERGY, especially to accelerate its evolution or in order to create new things (form new planets, drive the evolution in certain direction, bring things from other universes)
+[idea] Certain actions in the game also require and burn ENERGY, especially to accelerate its evolution or in order to create new things (form new planets, drive the evolution in certain direction, bring things from other universes)
 
 * Playing the game generates ENERGY to a rate that dynamically adapts to the overall burn rate (i.e. how much ENERGY is being spent). The adaptation function tries to approximate the difference to zero. ENERGY is an ERC-20 token available in the open market. 
 * The owner of a universe can arbitrarily invite players to their game for a multi-player experience. They can also make their universe public for anyone to join. In the web app each owner has a dedicated space for social activity about their game (can be public or private)
