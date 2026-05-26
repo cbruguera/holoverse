@@ -14,7 +14,7 @@ Each universe evolves through four distinct eras:
 1.  **Cosmic:** Shape the laws of physics, forge galaxies, and ignite suns.
 2.  **Biological:** Witness the emergence of life and guide the evolution of species.
 3.  **Social/Technological:** Build civilizations, establish commerce, and open your world to other players.
-4.  **Transcendent:** High-level interaction where universes can cross-pollinate and impact the broader multiverse.
+4.  **Transcendent:** High-level interaction where universes can quantum-interfere and impact the broader multiverse.
 
 ## 💎 The Entropy-Balanced Economy
 Holoverse uses a rigorous economic model designed for long-term sustainability:

@@ -35,6 +35,6 @@ The relationship where the **Universe NFT is a Capital Asset** (productive land)
 ## 3. Strategic Recommendations
 
 1.  **Maintenance Burn (The "Second Law of Thermodynamics"):** Universes should require a small periodic ENERGY burn to maintain their current Stage. Failure to "feed" the universe leads to regression.
-2.  **Transcendent Entropy:** Transcendent players should be able to "seed" other universes with unique items/species (tokenized exports), creating a cross-pollination economy.
+2. **Transcendent Entropy:** Transcendent players should be able to "seed" other universes with unique items/species (tokenized exports), creating a quantum-interference economy.
 3.  **Revenue Sharing Tax:** If an owner charges a fee to join, the protocol should take a "tax" (e.g., 5-10%) that is permanently burned.
 4.  **Generative Art as State-Machine:** Ensure the visual representation is a deep reflection of the underlying game state data, ensuring long-term "rarity" and value beyond the initial mint.
