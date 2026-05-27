@@ -2,12 +2,12 @@
 
 This document captures the critical analysis, identified gaps, and proposed improvements for the Holoverse project as of May 20, 2026.
 
-## 1. The ENERGY/Universe NFT Relationship
+## 1. The $NRG/Universe NFT Relationship
 
 ### Current Model: "Engine and Fuel"
-The relationship where the **Universe NFT is a Capital Asset** (productive land) and **ENERGY is the Utility/Consumable** (fuel) is fundamentally sound but carries risks.
+The relationship where the **Universe NFT is a Capital Asset** (productive land) and **$NRG is the Utility/Consumable** (fuel) is fundamentally sound but carries risks.
 
-*   **Risk:** "Farm and Dump" Cycle. If the primary use for ENERGY is to improve the NFT to generate *more* ENERGY, the system relies entirely on new player growth to maintain token price.
+*   **Risk:** "Farm and Dump" Cycle. If the primary use for $NRG is to improve the NFT to generate *more* $NRG, the system relies entirely on new player growth to maintain token price.
 *   **Proposed Solution:** Introduce "External Sinks" or "Maintenance Costs" that don't directly lead to more production.
 
 ## 2. Identified Gaps
@@ -15,7 +15,7 @@ The relationship where the **Universe NFT is a Capital Asset** (productive land)
 ### A. The "End-Game" Vacuum (Transcendent Stage)
 *   **Issue:** The "Transcendent" stage is currently undefined.
 *   **Critique:** Without a "decay" mechanic or a "maintenance" burn, Transcendent universes become static assets that may extract value without contributing back.
-*   **Suggestion:** Define a "Maintenance Burn" or "Energy Tax" for high-level universes to prevent stagnation.
+*   **Suggestion:** Define a "Maintenance Burn" or "$NRG Tax" for high-level universes to prevent stagnation.
 
 ### B. The NPC Economy
 *   **Issue:** No mention of the economy for players "incarnating" into NPCs.
@@ -34,7 +34,7 @@ The relationship where the **Universe NFT is a Capital Asset** (productive land)
 
 ## 3. Strategic Recommendations
 
-1.  **Maintenance Burn (The "Second Law of Thermodynamics"):** Universes should require a small periodic ENERGY burn to maintain their current Stage. Failure to "feed" the universe leads to regression.
+1.  **Maintenance Burn (The "Second Law of Thermodynamics"):** Universes should require a small periodic $NRG burn to maintain their current Stage. Failure to "feed" the universe leads to regression.
 2. **Transcendent Entropy:** Transcendent players should be able to "seed" other universes with unique items/species (tokenized exports), creating a quantum-interference economy.
-3.  **Revenue Sharing Tax:** If an owner charges a fee to join, the protocol should take a "tax" (e.g., 5-10%) that is permanently burned.
+3.  **Revenue Sharing Tax:** If an owner charges a fee to join, Holoverse should take a "tax" (e.g., 5-10%) that is permanently burned.
 4.  **Generative Art as State-Machine:** Ensure the visual representation is a deep reflection of the underlying game state data, ensuring long-term "rarity" and value beyond the initial mint.

@@ -8,7 +8,7 @@ Create new universes, witness the emergence of cosmic laws, the formation of gal
 
 | Layer         | Role                                                                                      |
 | ------------- | ----------------------------------------------------------------------------------------- |
-| **On-chain**  | Ownership, value movement, verifiable policy (ENERGY burns, treasury split, NFT identity) |
+| **On-chain**  | Ownership, value movement, verifiable policy ($NRG burns, treasury split, NFT identity) |
 | **Off-chain** | Authoritative game simulation, universe state, emission weighting, anti-abuse             |
 | **Client**    | Rendering, input, social surfaces — decoupled from a single renderer                      |
 

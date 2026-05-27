@@ -4,7 +4,7 @@ This document describes the system architecture and the major components to impl
 
 ## Guiding separation
 
-- **On-chain:** Ownership, value movement, and verifiable policy (ENERGY burns, treasury split, stable mint leg, NFT identity).
+- **On-chain:** Ownership, value movement, and verifiable policy ($NRG burns, treasury split, stable mint leg, NFT identity).
 - **Off-chain authoritative simulation:** Universe state, gameplay rules, anti-abuse, and **emission weighting signals** (e.g. active player-minutes). Start with a clear **off-chain source of truth** for game state; add **checkpoints or commitments** on-chain only where trust minimization is worth the complexity.
 - **Client:** Rendering, input, and social surfaces. **Game logic is not entangled with a single renderer** so visuals can evolve (e.g. 2D now, 3D/VR later).
 
@@ -16,7 +16,7 @@ This document describes the system architecture and the major components to impl
 
 | Component | Responsibility |
 |-----------|----------------|
-| **Contracts (Hardhat)** | Universe NFT mint with ENERGY burn + 90/10 treasury split + stable fee path; ENERGY ERC-20 integration (existing token or deployment per launch plan); optional claim contract for epoch rewards. |
+| **Contracts (Hardhat)** | Universe NFT mint with $NRG burn + 90/10 treasury split + stable fee path; $NRG ERC-20 integration (existing token or deployment per launch plan); optional claim contract for epoch rewards. |
 | **Chain indexing** | Subgraph, Ponder, or equivalent: universes, owners, burns, treasury events—read path for the web app and ops dashboards. |
 | **Identity & sessions** | Wallet authentication (e.g. SIWE), linked in-game identity, rate limits on emission-relevant events. |
 | **Simulation service** | Authoritative step/tick of universe state; evolution stages; validates actions; persists snapshots and history. |

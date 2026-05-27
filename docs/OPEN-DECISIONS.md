@@ -6,7 +6,7 @@ Decisions that are actively pending and block or significantly affect implementa
 
 ## Blocking Phase I
 
-### ENERGY token model
-**Status:** Under re-consideration  
-**Blocks:** `EnergyToken.sol`, mint cost logic, `UniverseNFT.sol` mint function, deploy scripts  
-**Notes:** Current `Holoverse-TOKENOMICS.md` is a reference starting point but the model needs review before any ENERGY-related contracts are implemented. Do not write or scaffold these until explicitly unblocked.
+### $NRG token model
+**Status:** ✅ Resolved (v0.2)  
+**Blocks:** None (Implemented in `NrgToken.sol` and `Universe.sol`)  
+**Resolution:** Entropy-balanced model with 90/10 burn/treasury split.

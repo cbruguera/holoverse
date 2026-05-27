@@ -2,9 +2,9 @@
 
 This document outlines the refined economic model for Holoverse, addressing the risks of "farm-and-dump" cycles, liquidity black holes, and end-game stagnation identified in v0.1.
 
-## 1. The Core Utility: ENERGY ($NRG)
+## 1. The Core Utility: NRG ($NRG)
 
-$NRG is the native utility token of the Holoverse ecosystem. It represents the literal energy required to sustain and grow a universe.
+$NRG is the native utility token of the Holoverse ecosystem. It represents the literal $NRG required to sustain and grow a universe.
 
 ### Key Metrics
 *   **Standard:** ERC-20
@@ -21,7 +21,7 @@ To avoid the "Liquidity Black Hole" (where low activity leads to low rewards, fu
 *   $NRG is emitted daily (per Epoch).
 *   **Emission Formula:** `Emission = Max(BaseFloor, AdaptiveWeight(RecentBurns))`
 *   **Base Floor:** A guaranteed minimum emission to ensure baseline liquidity and reward early adopters or survivors during "market winters."
-*   **Adaptive Weight:** As $NRG burns increase, the protocol allows higher emissions (up to a Hard Cap) to support a growing economy without causing hyper-inflation.
+*   **Adaptive Weight:** As $NRG burns increase, Holoverse allows higher emissions (up to a Hard Cap) to support a growing economy without causing hyper-inflation.
 
 ### Distribution (Proof of Activity)
 Emissions are distributed to Universe Owners and NPCs based on:
@@ -36,7 +36,7 @@ Emissions are distributed to Universe Owners and NPCs based on:
 ### A. Creation (The Big Bang)
 *   **Cost:** $NRG + Fixed USDC Fee.
 *   **Burn:** 90% of the $NRG used for minting is permanently removed from circulation.
-*   **Treasury:** 10% of $NRG and 100% of the USDC fee fund the protocol treasury for development and liquidity.
+*   **Treasury:** 10% of $NRG and 100% of the USDC fee fund the Holoverse treasury for development and liquidity.
 
 ### B. Evolution (Directed Mutation)
 *   **Stage Transitions:** Moving from Cosmic → Biological → Social requires a significant $NRG burn.
@@ -56,7 +56,7 @@ Players who do not own a Universe NFT can still participate and earn $NRG.
 *   **Labor for Rewards:** NPCs perform actions that increase the universe's Complexity Score.
 *   **Revenue Sharing:** A smart-contract-enforced split between the Universe Owner and NPCs.
     *   *Example:* Owner sets a 30% NPC split. 30% of all $NRG earned by the universe from the Epoch Cap is streamed to active NPCs based on their contribution.
-*   **Protocol Tax:** 5% of all owner-to-NPC transfers is burned.
+*   **Holoverse Tax:** 5% of all owner-to-NPC transfers is burned.
 
 ---
 
