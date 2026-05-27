@@ -25,6 +25,9 @@ deployments/localhost/
 .obsidian/
 *.swp
 
+# claude code
+.claude/
+
 # os
 .DS_Store
 Thumbs.db
