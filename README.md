@@ -23,6 +23,8 @@ Holoverse uses a rigorous economic model designed for long-term sustainability:
 *   **The NPC Labor Market:** Players who do not own a universe can participate as NPCs in others' worlds. By contributing to a universe's complexity, these players earn a share of the $NRG emitted by Holoverse in a fair, smart-contract-enforced model.
 *   **Unified Common Market:** While every universe can develop its own local economy (shops, businesses, and laws), $NRG acts as the global reserve currency, enabling trade and arbitrage across the entire Holoverse.
 
+![Holoverse Token Economic System](docs/tokenomics-diagram.svg)
+
 ---
 
 ## 🛠️ For Developers
