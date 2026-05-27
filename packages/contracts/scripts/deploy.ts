@@ -26,30 +26,45 @@ async function main() {
     console.log(`\nUsing native USDC: ${usdcAddress}`);
   }
 
-  // ---- Treasury ------------------------------------------------------------
+  // ---- NRG ($NRG) -------------------------------------------------------
 
-  const treasuryAddress = process.env.TREASURY_ADDRESS;
-  if (!treasuryAddress) throw new Error('TREASURY_ADDRESS env var is required');
+  console.log('\nDeploying NrgToken ($NRG)...');
+  const NrgToken = await ethers.getContractFactory('NrgToken');
+  const nrgToken = await NrgToken.deploy(deployer.address, deployer.address);
+  await nrgToken.waitForDeployment();
+  const nrgTokenAddress = await nrgToken.getAddress();
+  console.log(`NrgToken deployed: ${nrgTokenAddress}`);
 
-  // ---- UniverseNFT ---------------------------------------------------------
+  // ---- HoloverseTreasury ----------------------------------------------------
 
-  const energyCost = ethers.parseEther('100');   // TODO: update once ENERGY model is decided
+  const treasuryManagerAddress = process.env.TREASURY_MANAGER_ADDRESS || deployer.address;
+  console.log(`\nDeploying HoloverseTreasury (Manager: ${treasuryManagerAddress})...`);
+  const HoloverseTreasury = await ethers.getContractFactory('HoloverseTreasury');
+  const holoverseTreasury = await HoloverseTreasury.deploy(treasuryManagerAddress);
+  await holoverseTreasury.waitForDeployment();
+  const holoverseTreasuryAddress = await holoverseTreasury.getAddress();
+  console.log(`HoloverseTreasury deployed: ${holoverseTreasuryAddress}`);
+
+  // ---- Universe ---------------------------------------------------------
+
+  const nrgCost = ethers.parseEther('100');
   const usdcFee = 10n * 10n ** 6n;               // 10 USDC
   const baseURI = 'https://metadata.holoverse.xyz/';
 
-  console.log('\nDeploying UniverseNFT...');
-  const UniverseNFT = await ethers.getContractFactory('UniverseNFT');
-  const universeNFT = await UniverseNFT.deploy(
+  console.log('\nDeploying Universe...');
+  const Universe = await ethers.getContractFactory('Universe');
+  const universe = await Universe.deploy(
     usdcAddress,
-    treasuryAddress,
-    energyCost,
+    nrgTokenAddress,
+    holoverseTreasuryAddress,
+    nrgCost,
     usdcFee,
     baseURI,
     deployer.address
   );
-  await universeNFT.waitForDeployment();
-  const universeNFTAddress = await universeNFT.getAddress();
-  console.log(`UniverseNFT deployed: ${universeNFTAddress}`);
+  await universe.waitForDeployment();
+  const universeAddress = await universe.getAddress();
+  console.log(`Universe deployed: ${universeAddress}`);
 
   // ---- Write deployment record ---------------------------------------------
 
@@ -57,7 +72,9 @@ async function main() {
     network: network.name,
     deployer: deployer.address,
     usdc: usdcAddress,
-    universeNFT: universeNFTAddress,
+    nrg: nrgTokenAddress,
+    treasury: holoverseTreasuryAddress,
+    universe: universeAddress,
     timestamp: new Date().toISOString(),
   };
 
