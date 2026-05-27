@@ -4,7 +4,7 @@ This document outlines the refined economic model for Holoverse, addressing the 
 
 ## 1. The Core Utility: NRG ($NRG)
 
-$NRG is the native utility token of the Holoverse ecosystem. It represents the literal $NRG required to sustain and grow a universe.
+$NRG is the native utility token of the Holoverse ecosystem. It represents the literal energy required to sustain and grow a universe.
 
 ### Key Metrics
 *   **Standard:** ERC-20
