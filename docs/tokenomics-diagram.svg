@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="840" viewBox="0 0 1200 840" xmlns="http://www.w3.org/2000/svg"
+     font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+
+  <!-- ═══════════════════════════════════════════════════════ DEFS -->
+  <defs>
+    <!-- Arrow markers -->
+    <marker id="arr-green"  markerWidth="9" markerHeight="6" refX="9" refY="3" orient="auto"><polygon points="0 0,9 3,0 6" fill="#10b981"/></marker>
+    <marker id="arr-red"    markerWidth="9" markerHeight="6" refX="9" refY="3" orient="auto"><polygon points="0 0,9 3,0 6" fill="#ef4444"/></marker>
+    <marker id="arr-blue"   markerWidth="9" markerHeight="6" refX="9" refY="3" orient="auto"><polygon points="0 0,9 3,0 6" fill="#3b82f6"/></marker>
+    <marker id="arr-amber"  markerWidth="9" markerHeight="6" refX="9" refY="3" orient="auto"><polygon points="0 0,9 3,0 6" fill="#f59e0b"/></marker>
+    <marker id="arr-amber2" markerWidth="9" markerHeight="6" refX="9" refY="3" orient="auto"><polygon points="0 0,9 3,0 6" fill="#f59e0b"/></marker>
+    <marker id="arr-cyan"   markerWidth="9" markerHeight="6" refX="9" refY="3" orient="auto"><polygon points="0 0,9 3,0 6" fill="#06b6d4"/></marker>
+    <marker id="arr-red2"   markerWidth="9" markerHeight="6" refX="9" refY="3" orient="auto"><polygon points="0 0,9 3,0 6" fill="#ef4444"/></marker>
+
+    <!-- Node fill gradients -->
+    <linearGradient id="g-green"  x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#022c22"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="g-amber"  x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#2d1400"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <linearGradient id="g-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1e0c45"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+    <linearGradient id="g-cyan"   x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#032330"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+    <linearGradient id="g-red"    x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#2d0404"/>
+      <stop offset="100%" stop-color="#5a0a0a"/>
+    </linearGradient>
+    <linearGradient id="g-blue"   x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0c1f3a"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <linearGradient id="g-nrg"    x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1a1000"/>
+      <stop offset="100%" stop-color="#2d1f00"/>
+    </linearGradient>
+    <linearGradient id="g-bg"     x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#080c16"/>
+      <stop offset="100%" stop-color="#0d1424"/>
+    </linearGradient>
+
+    <!-- Glow filter for $NRG badge -->
+    <filter id="glow-gold" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════════════ BACKGROUND -->
+  <rect width="1200" height="840" fill="url(#g-bg)"/>
+
+  <!-- Stars -->
+  <circle cx="228" cy="25"  r="1.1" fill="white" opacity="0.30"/>
+  <circle cx="1116" cy="89" r="1.0" fill="white" opacity="0.40"/>
+  <circle cx="65"  cy="30"  r="0.5" fill="white" opacity="0.22"/>
+  <circle cx="142" cy="46"  r="1.1" fill="white" opacity="0.32"/>
+  <circle cx="592" cy="81"  r="1.2" fill="white" opacity="0.38"/>
+  <circle cx="747" cy="166" r="0.8" fill="white" opacity="0.25"/>
+  <circle cx="407" cy="156" r="0.8" fill="white" opacity="0.40"/>
+  <circle cx="1149" cy="203" r="1.1" fill="white" opacity="0.36"/>
+  <circle cx="985" cy="218" r="1.3" fill="white" opacity="0.40"/>
+  <circle cx="866" cy="216" r="1.3" fill="white" opacity="0.33"/>
+  <circle cx="317" cy="194" r="0.7" fill="white" opacity="0.30"/>
+  <circle cx="96"  cy="112" r="0.6" fill="white" opacity="0.25"/>
+  <circle cx="193" cy="99"  r="1.1" fill="white" opacity="0.20"/>
+  <circle cx="924" cy="123" r="0.6" fill="white" opacity="0.18"/>
+  <circle cx="1039" cy="108" r="1.3" fill="white" opacity="0.42"/>
+  <circle cx="509" cy="196" r="0.6" fill="white" opacity="0.36"/>
+  <circle cx="1125" cy="169" r="0.7" fill="white" opacity="0.25"/>
+  <circle cx="799" cy="271" r="1.3" fill="white" opacity="0.30"/>
+  <circle cx="931" cy="292" r="0.8" fill="white" opacity="0.42"/>
+  <circle cx="936" cy="323" r="1.3" fill="white" opacity="0.35"/>
+  <circle cx="1149" cy="551" r="0.7" fill="white" opacity="0.24"/>
+  <circle cx="1169" cy="590" r="0.9" fill="white" opacity="0.38"/>
+  <circle cx="146" cy="623" r="1.0" fill="white" opacity="0.42"/>
+  <circle cx="209" cy="692" r="1.1" fill="white" opacity="0.16"/>
+  <circle cx="234" cy="698" r="1.3" fill="white" opacity="0.33"/>
+  <circle cx="411" cy="730" r="0.7" fill="white" opacity="0.35"/>
+  <circle cx="968" cy="826" r="0.8" fill="white" opacity="0.38"/>
+  <circle cx="1093" cy="746" r="0.6" fill="white" opacity="0.18"/>
+  <circle cx="81"  cy="634" r="0.5" fill="white" opacity="0.26"/>
+  <circle cx="1138" cy="677" r="1.1" fill="white" opacity="0.14"/>
+  <circle cx="756" cy="291" r="0.6" fill="white" opacity="0.32"/>
+  <circle cx="725" cy="433" r="0.8" fill="white" opacity="0.32"/>
+  <circle cx="154" cy="453" r="1.2" fill="white" opacity="0.33"/>
+  <circle cx="330" cy="552" r="1.3" fill="white" opacity="0.20"/>
+  <circle cx="1083" cy="8"   r="1.1" fill="white" opacity="0.16"/>
+  <circle cx="929" cy="3"    r="1.3" fill="white" opacity="0.30"/>
+  <circle cx="1000" cy="19"  r="0.5" fill="white" opacity="0.37"/>
+  <circle cx="714" cy="70"   r="1.3" fill="white" opacity="0.40"/>
+  <circle cx="775" cy="80"   r="1.0" fill="white" opacity="0.42"/>
+  <circle cx="161" cy="87"   r="1.1" fill="white" opacity="0.18"/>
+  <circle cx="257" cy="131"  r="1.1" fill="white" opacity="0.36"/>
+  <circle cx="201" cy="62"   r="0.8" fill="white" opacity="0.22"/>
+  <circle cx="534" cy="209"  r="1.1" fill="white" opacity="0.37"/>
+  <circle cx="643" cy="244"  r="0.7" fill="white" opacity="0.33"/>
+
+  <!-- ═══════════════════════════════════════════════════════ TITLE -->
+  <text x="600" y="34" text-anchor="middle" fill="#e2e8f0" font-size="19" font-weight="700" letter-spacing="2.5">
+    HOLOVERSE — TOKEN ECONOMIC SYSTEM
+  </text>
+  <line x1="200" y1="42" x2="1000" y2="42" stroke="#334155" stroke-width="1"/>
+
+  <!-- ══════════════════════════════════ NODE: EPOCH EMISSIONS ENGINE -->
+  <rect x="380" y="54" width="420" height="88" rx="14"
+        fill="url(#g-green)" stroke="#10b981" stroke-width="1.5"
+        filter="url(#glow-green)"/>
+  <text x="590" y="82"  text-anchor="middle" fill="#10b981" font-size="13" font-weight="700" letter-spacing="1">EPOCH EMISSIONS ENGINE</text>
+  <text x="590" y="102" text-anchor="middle" fill="#6ee7b7" font-size="11">Daily $NRG pool · Emission = Max(BaseFloor, AdaptiveWeight(RecentBurns))</text>
+  <text x="590" y="120" text-anchor="middle" fill="#6ee7b7" font-size="11">Per-universe hard cap · No rollover · Counter-cyclical base floor</text>
+
+  <!-- ════════════════════════════════════════ NODE: UNIVERSE OWNER -->
+  <rect x="55" y="268" width="262" height="130" rx="14"
+        fill="url(#g-amber)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="186" y="296" text-anchor="middle" fill="#f59e0b"  font-size="13" font-weight="700" letter-spacing="1">UNIVERSE OWNER</text>
+  <line x1="75"  y1="304" x2="297" y2="304" stroke="#78350f" stroke-width="1"/>
+  <text x="186" y="321" text-anchor="middle" fill="#fcd34d" font-size="10.5">Mints universe NFTs (burn + USDC)</text>
+  <text x="186" y="338" text-anchor="middle" fill="#fcd34d" font-size="10.5">Earns $NRG from Epoch pool</text>
+  <text x="186" y="355" text-anchor="middle" fill="#fcd34d" font-size="10.5">Sets NPC split % · Invites players</text>
+  <text x="186" y="372" text-anchor="middle" fill="#fcd34d" font-size="10.5">Pays evolution &amp; maintenance burns</text>
+
+  <!-- ═════════════════════════════════════════ NODE: UNIVERSE NFT -->
+  <rect x="380" y="210" width="430" height="220" rx="14"
+        fill="url(#g-purple)" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="595" y="238" text-anchor="middle" fill="#a78bfa" font-size="13" font-weight="700" letter-spacing="1">UNIVERSE NFT</text>
+  <line x1="400" y1="246" x2="790" y2="246" stroke="#4c1d95" stroke-width="1"/>
+
+  <!-- Stage progression badges -->
+  <rect x="395" y="255" width="86"  height="26" rx="7" fill="#1e1244" stroke="#6d28d9" stroke-width="1"/>
+  <text x="438" y="272"  text-anchor="middle" fill="#c4b5fd" font-size="10" font-weight="600">Cosmic</text>
+  <text x="485" y="273"  text-anchor="middle" fill="#6d28d9" font-size="14">›</text>
+  <rect x="489" y="255" width="96"  height="26" rx="7" fill="#1e1244" stroke="#6d28d9" stroke-width="1"/>
+  <text x="537" y="272"  text-anchor="middle" fill="#c4b5fd" font-size="10" font-weight="600">Biological</text>
+  <text x="589" y="273"  text-anchor="middle" fill="#6d28d9" font-size="14">›</text>
+  <rect x="593" y="255" width="80"  height="26" rx="7" fill="#1e1244" stroke="#6d28d9" stroke-width="1"/>
+  <text x="633" y="272"  text-anchor="middle" fill="#c4b5fd" font-size="10" font-weight="600">Social</text>
+  <text x="678" y="273"  text-anchor="middle" fill="#6d28d9" font-size="14">›</text>
+  <rect x="681" y="255" width="104" height="26" rx="7" fill="#2e1065" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="733" y="272"  text-anchor="middle" fill="#e9d5ff" font-size="10" font-weight="700">Transcendent</text>
+
+  <!-- Complexity Score section -->
+  <text x="595" y="306" text-anchor="middle" fill="#a78bfa" font-size="10.5" font-weight="600">Complexity Score determines each universe's share of the Epoch pool</text>
+  <text x="595" y="322" text-anchor="middle" fill="#c4b5fd" font-size="10">f ( stage level · species diversity · player-minutes · NPC interactions · economic velocity )</text>
+
+  <!-- Maintenance warning box -->
+  <rect x="395" y="335" width="415" height="80" rx="8"
+        fill="#1a0840" stroke="#6d28d9" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="602" y="356" text-anchor="middle" fill="#fbbf24" font-size="10.5" font-weight="700">&#9888;  MAINTENANCE BURN  &#9888;</text>
+  <text x="602" y="375" text-anchor="middle" fill="#ddd6fe" font-size="10">Owners must burn $NRG each epoch to hold their stage.</text>
+  <text x="602" y="392" text-anchor="middle" fill="#ddd6fe" font-size="10">Missed payment &#8594; stage regression  (Transcendent &#8594; Social &#8594; …)</text>
+  <text x="602" y="408" text-anchor="middle" fill="#ddd6fe" font-size="10">Stage transitions (evolution) also require a significant $NRG burn.</text>
+
+  <!-- ═══════════════════════════════════════════ NODE: NPC PLAYERS -->
+  <rect x="55" y="462" width="262" height="108" rx="14"
+        fill="url(#g-cyan)" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="186" y="490" text-anchor="middle" fill="#06b6d4"  font-size="13" font-weight="700" letter-spacing="1">NPC PLAYERS</text>
+  <line x1="75" y1="498" x2="297" y2="498" stroke="#083344" stroke-width="1"/>
+  <text x="186" y="515" text-anchor="middle" fill="#67e8f9" font-size="10.5">No Universe NFT required to enter</text>
+  <text x="186" y="532" text-anchor="middle" fill="#67e8f9" font-size="10.5">Invited by owner (or join public universe)</text>
+  <text x="186" y="549" text-anchor="middle" fill="#67e8f9" font-size="10.5">Earn $NRG by raising Complexity Score</text>
+
+  <!-- ════════════════════════════════════════════════ NODE: BURN -->
+  <rect x="55" y="664" width="240" height="92" rx="14"
+        fill="url(#g-red)" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="175" y="699" text-anchor="middle" fill="#ef4444" font-size="28">&#128293;</text>
+  <text x="175" y="720" text-anchor="middle" fill="#ef4444"  font-size="13" font-weight="700" letter-spacing="1">BURN</text>
+  <text x="175" y="738" text-anchor="middle" fill="#fca5a5" font-size="10.5">Permanent — removed from supply</text>
+
+  <!-- ══════════════════════════════════════════ NODE: TREASURY -->
+  <rect x="666" y="664" width="280" height="92" rx="14"
+        fill="url(#g-blue)" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="806" y="699" text-anchor="middle" fill="#3b82f6"  font-size="24">&#128142;</text>
+  <text x="806" y="720" text-anchor="middle" fill="#3b82f6"  font-size="13" font-weight="700" letter-spacing="1">TREASURY</text>
+  <text x="806" y="738" text-anchor="middle" fill="#93c5fd"  font-size="10.5">Operations · Liquidity · Grants</text>
+
+  <!-- ═══════════════════════════════════════ $NRG TOKEN BADGE -->
+  <circle cx="1055" cy="370" r="76" fill="url(#g-nrg)" stroke="#b45309" stroke-width="1.5" filter="url(#glow-gold)"/>
+  <circle cx="1055" cy="370" r="64" fill="none"        stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,4"/>
+  <text x="1055" y="352" text-anchor="middle" fill="#f5c542" font-size="26" font-weight="900" letter-spacing="1">$NRG</text>
+  <line x1="1005" y1="362" x2="1105" y2="362" stroke="#78350f" stroke-width="1"/>
+  <text x="1055" y="380" text-anchor="middle" fill="#fbbf24" font-size="11">ERC-20 utility token</text>
+  <text x="1055" y="397" text-anchor="middle" fill="#fbbf24" font-size="11">Capped emission</text>
+  <text x="1055" y="414" text-anchor="middle" fill="#fbbf24" font-size="11">Open market trading</text>
+
+  <!-- ═══════════════════════════════════════════════════ ARROWS -->
+
+  <!-- 1 ── Epoch → Owner  ($NRG via Proof of Activity)  GREEN -->
+  <path d="M 590 142 C 590 210 186 210 186 268"
+        fill="none" stroke="#10b981" stroke-width="2.5" marker-end="url(#arr-green)"/>
+  <rect x="298" y="182" width="182" height="36" rx="7" fill="#080c16" fill-opacity="0.92"/>
+  <text x="389" y="198" text-anchor="middle" fill="#10b981" font-size="10.5" font-weight="600">$NRG · Proof of Activity</text>
+  <text x="389" y="212" text-anchor="middle" fill="#6ee7b7" font-size="10">weighted by Complexity Score</text>
+
+  <!-- 2 ── Owner → NFT  (owns)  AMBER solid -->
+  <path d="M 317 316 L 380 316"
+        fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr-amber)"/>
+  <text x="349" y="309" text-anchor="middle" fill="#f59e0b" font-size="10" font-weight="600">owns</text>
+
+  <!-- 3 ── NFT → Owner  (Complexity Score → emission weight)  AMBER dashed -->
+  <path d="M 380 340 L 317 340"
+        fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr-amber2)"/>
+  <text x="349" y="356" text-anchor="middle" fill="#f59e0b" font-size="10">score &#8594; weight</text>
+
+  <!-- 4 ── Owner → NPC  (NPC split %)  AMBER solid -->
+  <path d="M 186 398 L 186 462"
+        fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr-amber)"/>
+  <rect x="194" y="416" width="138" height="30" rx="6" fill="#080c16" fill-opacity="0.92"/>
+  <text x="263" y="429" text-anchor="middle" fill="#f59e0b" font-size="10" font-weight="600">NPC split %</text>
+  <text x="263" y="441" text-anchor="middle" fill="#fcd34d" font-size="9.5">smart-contract enforced</text>
+
+  <!-- 5 ── NPC → NFT  (contributes to Complexity Score)  CYAN -->
+  <path d="M 317 506 C 385 506 400 465 406 446"
+        fill="none" stroke="#06b6d4" stroke-width="2" marker-end="url(#arr-cyan)"/>
+  <rect x="326" y="472" width="148" height="30" rx="6" fill="#080c16" fill-opacity="0.92"/>
+  <text x="400" y="485" text-anchor="middle" fill="#06b6d4" font-size="10" font-weight="600">contributes to</text>
+  <text x="400" y="497" text-anchor="middle" fill="#67e8f9" font-size="10">Complexity Score</text>
+
+  <!-- 6 ── Owner → Burn  (Mint 90% + Evolution + Maintenance)  RED thick -->
+  <path d="M 98 398 C 68 530 88 620 118 664"
+        fill="none" stroke="#ef4444" stroke-width="3" marker-end="url(#arr-red)"/>
+  <rect x="6" y="488" width="124" height="54" rx="7" fill="#080c16" fill-opacity="0.94"/>
+  <text x="68" y="504" text-anchor="middle" fill="#ef4444" font-size="10" font-weight="700">Mint: 90% NRG</text>
+  <text x="68" y="519" text-anchor="middle" fill="#fca5a5" font-size="10">+ Evolution cost</text>
+  <text x="68" y="534" text-anchor="middle" fill="#fca5a5" font-size="10">+ Maintenance burn</text>
+
+  <!-- 7 ── NPC → Burn  (5% tax)  RED dashed -->
+  <path d="M 112 570 C 96 624 128 652 148 664"
+        fill="none" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr-red2)"/>
+  <text x="82" y="626" text-anchor="middle" fill="#ef4444" font-size="10" font-weight="600">5% tax</text>
+  <text x="82" y="638" text-anchor="middle" fill="#fca5a5" font-size="9.5">on NPC payments</text>
+
+  <!-- 8 ── Owner → Treasury  (Mint 10% NRG + 100% USDC)  BLUE -->
+  <path d="M 282 362 C 340 500 666 595 748 664"
+        fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <rect x="388" y="560" width="172" height="34" rx="7" fill="#080c16" fill-opacity="0.94"/>
+  <text x="474" y="575" text-anchor="middle" fill="#3b82f6" font-size="10" font-weight="600">Mint: 10% NRG</text>
+  <text x="474" y="589" text-anchor="middle" fill="#93c5fd" font-size="10">+ 100% USDC fee</text>
+
+  <!-- ════════════════════════════════════════════════════ LEGEND -->
+  <rect x="55" y="774" width="1090" height="52" rx="10" fill="#0d1424" stroke="#1e293b" stroke-width="1"/>
+  <text x="105" y="793" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="0.5">LEGEND</text>
+
+  <!-- Green -->
+  <line x1="160" y1="793" x2="184" y2="793" stroke="#10b981" stroke-width="2.5" marker-end="url(#arr-green)"/>
+  <text x="192" y="797" fill="#10b981" font-size="10.5">$NRG inflow (emissions)</text>
+
+  <!-- Red solid -->
+  <line x1="360" y1="793" x2="384" y2="793" stroke="#ef4444" stroke-width="3" marker-end="url(#arr-red)"/>
+  <text x="392" y="797" fill="#ef4444" font-size="10.5">Burn / permanent sink</text>
+
+  <!-- Red dashed -->
+  <line x1="540" y1="793" x2="564" y2="793" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr-red2)"/>
+  <text x="572" y="797" fill="#fca5a5" font-size="10.5">Tax / indirect burn</text>
+
+  <!-- Blue -->
+  <line x1="700" y1="793" x2="724" y2="793" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <text x="732" y="797" fill="#3b82f6" font-size="10.5">Treasury inflow</text>
+
+  <!-- Amber solid -->
+  <line x1="860" y1="793" x2="884" y2="793" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr-amber)"/>
+  <text x="892" y="797" fill="#f59e0b" font-size="10.5">Owner actions</text>
+
+  <!-- Cyan -->
+  <line x1="990" y1="793" x2="1014" y2="793" stroke="#06b6d4" stroke-width="2" marker-end="url(#arr-cyan)"/>
+  <text x="1022" y="797" fill="#06b6d4" font-size="10.5">NPC actions</text>
+
+  <!-- Second legend row: node types -->
+  <rect x="160" y="806" width="12" height="10" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+  <text x="178" y="816" fill="#94a3b8" font-size="10">Emission source</text>
+  <rect x="310" y="806" width="12" height="10" rx="2" fill="#451a03" stroke="#f59e0b" stroke-width="1"/>
+  <text x="328" y="816" fill="#94a3b8" font-size="10">Player / actor</text>
+  <rect x="450" y="806" width="12" height="10" rx="2" fill="#2e1065" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="468" y="816" fill="#94a3b8" font-size="10">On-chain asset (NFT)</text>
+  <rect x="620" y="806" width="12" height="10" rx="2" fill="#5a0a0a" stroke="#ef4444" stroke-width="1"/>
+  <text x="638" y="816" fill="#94a3b8" font-size="10">Permanent sink (burn)</text>
+  <rect x="810" y="806" width="12" height="10" rx="2" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <text x="828" y="816" fill="#94a3b8" font-size="10">Treasury (reserve)</text>
+
+</svg>
