@@ -6,6 +6,10 @@ A software engineer recently getting into the game business. I want to build gam
 
 Web3 game where players mint and evolve unique universes as NFTs. Game state is off-chain; ownership and economics are on-chain.
 
+## Current work (read first)
+
+- `CURRENT-WORK.md` — what's in progress right now, what's blocked, what's next
+
 ## Open decisions (check before implementing)
 
 - `docs/OPEN-DECISIONS.md` — decisions pending resolution that block or affect implementation
@@ -29,8 +33,10 @@ Web3 game where players mint and evolve unique universes as NFTs. Game state is 
 
 ## Git commits
 
+- No conventional commit prefixes (no feat:, fix:, docs:, etc.)
 - Do not include `Co-Authored-By` trailers
 - Keep commits small and cohesive — each commit should represent one logical unit of work, not an arbitrary grouping of disparate changes
+- Commit before any session ends — partial work belongs in a wip commit, not in limbo
 
 ## Never do
 
