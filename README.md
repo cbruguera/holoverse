@@ -5,16 +5,16 @@
 ---
 
 ## 🌌 The Vision
-In Holoverse, you are the owner and architect of your own universe. Each universe is a unique NFT that progresses through natural stages of development, fueled by **$NRG**.
+In Holoverse, you are the owner and architect of your own universe. Each universe is a unique NFT that progresses through natural stages of development, fueled by **$NRG**. Each NFT provides a unique gaming experience where other players can join and participate in its evolution. A Holoverse NFT is not an asset within a game, it's a whole game.
 
 Unlike static metaverses, Holoverse is governed by a dynamic economic model where maintaining a complex system requires constant input. To see your creation flourish from a cosmic void into a bustling social civilization, you must strategically manage its $NRG resources.
 
 ## 🧬 Evolutionary Stages
 Each universe evolves through four distinct eras:
-1.  **Cosmic:** Shape the laws of physics, forge galaxies, and ignite suns.
-2.  **Biological:** Witness the emergence of life and guide the evolution of species.
-3.  **Social/Technological:** Build civilizations, establish commerce, and open your world to other players.
-4.  **Transcendent:** High-level interaction where universes can quantum-interfere and impact the broader multiverse.
+1.  **Cosmic:** Shape the laws of physics, forge galaxies, and ignite stars and other celestial bodies.
+2.  **Biological:** Witness the emergence of life and guide the emergence of species through actual evolutionary computation.
+3.  **Social/Technological:** Incarnate as characters of sentient species. Interact with other players. Build things. Establish commerce and open your world to an unbounded future.
+4.  **Transcendent:** Allow inter-universe interaction through quantum interference. Move beyond the limits of crafted worlds and guide the destiny of the Holoverse. Join the _Council_ _of_ _Architects_ to participate in the platform's governance and development.  
 
 ## 💎 The Entropy-Balanced Economy
 Holoverse uses a rigorous economic model designed for long-term sustainability:
