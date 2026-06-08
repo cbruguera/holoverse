@@ -14,7 +14,7 @@ Each universe evolves through four distinct eras:
 1.  **Cosmic:** Shape the laws of physics, forge galaxies, and ignite stars and other celestial bodies.
 2.  **Biological:** Witness the emergence of life and guide the emergence of species through actual evolutionary computation.
 3.  **Social/Technological:** Incarnate as characters of sentient species. Interact with other players. Build things. Establish commerce and open your world to an unbounded future.
-4.  **Transcendent:** Allow inter-universe interaction through quantum interference. Move beyond the limits of crafted worlds and guide the destiny of the Holoverse. Join the _Council_ _of_ _Architects_ to participate in the platform's governance and development.  
+4.  **Transcendent:** Connect universes through quantum interference. Move beyond the limits of the universe to guide the destiny of the Holoverse by joining the _Council_ _of_ _Architects_ to participate in the governance and development of the platform.  
 
 ## 💎 The Entropy-Balanced Economy
 Holoverse uses a rigorous economic model designed for long-term sustainability:
